@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+
+  <meta charset="utf-8">
+  <title>Show Trip</title>
+  <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link href="/car.jpg" rel="shortcut icon" type="image/x-icon">
+  <script src="/node_modules/jquery/dist/jquery.min.js"></script> 
+  <script src="/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+
+
+
+
+
+  <style>
+
+  tr:hover {
+    background-color:whitesmoke;
+    color: black;
+    font-weight: bold;
+  }
+  .selected {
+    background-color:whitesmoke;
+    color:red;
+    font-weight:bold;
+  }
+
+  </style>
+
+  </head>
+  <body onload="init();">
+  <div id="header"></div> 
+
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="tripInformation" ng-app="displayTripsApp" ng-controller="displayTripsCtrl" ng-init="trip=0">
+  <!-- all about the map -->
+  <div id="map-container" class="map col-xs-12 col-sm-12 col-md-8 col-lg-8" style="height:500px;position:relative;padding-bottom:50px;">
+    <div id="map" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" style="height:100%"></div>
+   
+
+  </div>
+  <!--end of the map -->
+
+</div>
+
+  <script>
+    function init() {
+      console.log("init");
+    }
+  </script>
+
+  <script src="/js/show.js"></script> 
+
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3dwDzOBKBdFmKH9yn5yvp72lw09kW01M&callback=initMap"></script> 
+</body>
+</html>
+
+
