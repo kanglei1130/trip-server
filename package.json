@@ -1,5 +1,5 @@
 {
-  "name": "drivesense-server",
+  "name": "trip-server",
   "version": "0.0.0",
   "description": "",
   "main": "app.js",
@@ -23,6 +23,6 @@
   "author": "",
   "license": "BSD-2-Clause",
   "bugs": {
-    "url": "https://github.com/kanglei1130/drivesense-server/issues"
+    "url": "https://github.com/kanglei1130/trip-server/issues"
   }
 }
