@@ -17,8 +17,25 @@ var test = function(input, callback) {
 }
 
 var input = {'test': 123};
+/*
 test(input, function(err){
   Error.captureStackTrace(input);
   console.log(err.stack);
 });
+*/
+
+
+const file = "/home/lkang/projects/sensorgps/workingset/gpsdirection/turn/gps.dat";
+fs.readFile(file, function (err, data) {
+  if (err) {
+    console.error(err); 
+    return;
+  }
+  const input = data.toString().split("\n");
+  console.log(gps);
+  for(const i = 0; i < input.length; ++i) {
+    const cur = gps[i];
+  }
+});
+
 
